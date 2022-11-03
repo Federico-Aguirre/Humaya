@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Humaya</title>
+</head>
+
+<body>
+    <img class="imagenCentral" src="./images/Central/imagenCentral.png"></img>
+    <header class="header">
+        <a href="#hero" class="header__hero">Home</a>
+        <a href="#productos" class="header__productos">Productos</a>
+        <a href="#hero" class="header__humaya"></a>
+        <a href="#locales" class="header__locales">Locales</a>
+        <a href="#contacto" class="header__contacto">Contacto</a>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__container__title">DULCES DEL ALMA</div>
+            <div class="hero__container__text">
+                Los productos HUMAYA son elaborados desde hace màs de 50
+                años fiel a las tradiciones familiares y sabores caseros,
+                acompañandote en los momentos màs importantes de la vida.
+            </div>
+            <button class="hero__container__button">conocenos</button>
+
+        </div>
+    </section>
+
+    <section id="productos" class="productos">
+        <legend class="productos__title">PRODUCTOS</legend>
+        <img src="/images/Productos/Producto1.png" alt="Producto1" class="productos__image">
+        <div class="productos__textContainer">
+            <div class="productos__textContainer__title">DULCE DE LECHE TRADICIONAL</div>
+            <p class="productos__textContainer__text">Elaboraciòn artesanal de principio a fin, con un sabor intenso,
+                receta tradicional.</p>
+            <div class="productos__textContainer__definition">Presentaciòn en frasco de vidrio de 580gr.</div>
+            <button>+Info</button>
+        </div>
+        <div class="productos__textContainer">
+            <div class="productos__textContainer__title">DULCE DE LECHE SIN AZÙCAR</div>
+            <p class="productos__textContainer__text">Elaboraciòn artesanal para cuidar tu silueta sin renunciar a nada,
+                endulzado naturalmente con stevia.</p>
+            <div class="productos__textContainer__definition">Presentaciòn en frasco de vidrio de 580gr y 280gr.</div>
+            <button>+Info</button>
+        </div>
+        <img src="/images/Productos/Producto2.png" alt="Producto2" class="productos__image">
+        <img src="/images/Productos/Producto3.png" alt="Producto3" class="productos__image">
+        <div class="productos__textContainer">
+            <div class="productos__textContainer__title">DULCE CHOCONUTT</div>
+            <p class="productos__textContainer__text">Elaboraciòn artesanal para el capricho dulce, combinaciòn de
+                dulce de leche, chocolate y pasta de avellanas. Una delicia ùnica.</p>
+            <div class="productos__textContainer__definition">Presentaciòn en frasco de vidrio de 580gr.</div>
+            <button>+Info</button>
+        </div>
+        <div class="productos__textContainer">
+            <div class="productos__textContainer__title">ALFAJORES DE MAICENA</div>
+            <p class="productos__textContainer__text">Alfajores de dulce de leche con coco rallado, relleno con 2cm de
+                pura dulzura. Pudiendo elegir entre dulce de leche tradicional, light o choconutt.</p>
+            <div class="productos__textContainer__definition">Presentaciòn en caja de 6 y 12 alfajores.</div>
+            <button>+Info</button>
+        </div>
+        <div class="productos__imageContainer">
+            <img src="/images/Productos/Producto4.png" alt="Producto4">
+        </div>
+        <div class="productos__propiedades">
+            <div class="productos__propiedades__title">La mejor calidad para vos</div>
+            <div class="productos__propiedades__imageContainer">
+                <img src="/images/Productos/Ingrediente1.png" alt="icono1">
+                <img src="/images/Productos/Ingrediente2.png" alt="icono2">
+                <img src="/images/Productos/Ingrediente3.png" alt="icono3">
+                <div class="productos__propiedades__imageDescription">100% ORGANICO</div>
+                <div class="productos__propiedades__imageDescription">SIN TACC</div>
+                <div class="productos__propiedades__imageDescription">SIN CONSERVANTES</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="locales" class="locales">
+
+    </section>
+
+    <section id="contacto" class="contacto">
+        <legend class="contacto__title">Contàctanos</legend>
+        <div class="contacto__container">
+            <img src="/images/Productos/Producto3.png" alt="producto3">
+            <div class="contacto__container__formContainer">
+                <form class="contacto__container__formContainer__form" action="https://formspree.io/mjvapnag"
+                    method="POST">
+
+                    <div class="contacto__container__formContainer__form__title">Dèjanos tu consulta y nuestro personal
+                        se pondrà en contacto a la brevedad:</div>
+                    <label class="contacto__container__formContainer__form__labelName" for="nombre">NOMBRE</label>
+
+                    <input class="contacto__container__formContainer__form__name" id="name" type="text" name="nombre"
+                        autocomplete="off" placeholder="  " required />
+
+                    <label class="contacto__container__formContainer__form__labelEmail" for="email">E-MAIL</label>
+                    <input class="contacto__container__formContainer__form__email" id="email" type="email" name="email"
+                        autocomplete="off" placeholder="  " required />
+
+                    <label class="contacto__container__formContainer__form__labelTextarea1"
+                        for="textarea1">CONSULTA</label>
+                    <textarea class="contacto__container__formContainer__form__textarea1" id="textarea1" name="consulta"
+                        placeholder=" "></textarea>
+
+                    <input type="submit" value="Enviar" class="contacto__formContainer__form__enviar" />
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="recetas" class="recetas">
+        <legend class="recetas__title">Recetas</legend>
+        <div class="recetas__container">
+            <div class="recetas__container__card">
+                <img src="./images/Productos/Conitos.png" alt="Conitos">
+                <div class="recetas__container__card__title">Conitos</div>
+                <div class="recetas__container__card__text">Una deliciosa opción para acompañar las meriendas, ese
+                    antojo de media noche o compartir con
+                    amigos.</div>
+                <button>Preparación</button>
+            </div>
+            <div class=" recetas__container__card">
+                <img src="./images/Productos/Pepas.png" alt="Pepas">
+                <div class="recetas__container__card__title">Pepas</div>
+                <div class="recetas__container__card__text">Las galletas mas tiernas y ricas, rellenas de dulce de
+                    leche, ideales para el mate y la hora del té.</div>
+                <button>Preparación</button>
+            </div>
+            <div class=" recetas__container__card">
+                <img src="./images/Productos/TortaNutt.png" alt="TortaNutt">
+                <div class="recetas__container__card__title">TortaNutt</div>
+                <div class="recetas__container__card__text">La torta de tres capas mas sabrosas del mundo, combina una
+                    base de vainilla, dulce de leche y cubierta de choconutt.</div>
+                <button>Preparación</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer__title">ENCONTRANOS EN:</div>
+        <img src="./images/Logo/LogoHumaya100x100.png" alt="" class="footer__icon">
+        <div class="footer__secondaryTitle">MENÚ</div>
+        <div class="footer__secondaryTitle">NAVEGADOR</div>
+        <div class="footer__secondaryTitle">REDES</div>
+        <div class="footer__secondaryTitle">UBICACIÓN</div>
+        <div class="footer__link">Home</div>
+        <div class="footer__link">Preguntas frecuentes</div>
+        <div class="footer__link">Instagram</div>
+        <div class="footer__address">Monte de Oca 2356, CABA</div>
+        <div class="footer__link">Productos</div>
+        <div class="footer__link">Distribuidores</div>
+        <div class="footer__link">FACEBOOK</div>
+        <img src="./images/mapa.png" alt="Mapa" class="footer__map">
+        <div class="footer__link">Locales</div>
+        <div class="footer__link">Prensa</div>
+        <div class="footer__link">FACEBOOK</div>
+        <div class="footer__link">Contacto</div>
+        <div class="footer__link">Recetas exclusivas</div>
+        <div class="footer__link">TICTOC</div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

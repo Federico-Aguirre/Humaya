@@ -1,0 +1,411 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+.textarea_1 {
+  border: 1px solid hsl(0deg, 0%, 50%);
+  border-radius: 2px;
+}
+
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+}
+
+button, input[type=submit], input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+body {
+  height: 100vh;
+  color: hsl(0deg, 0%, 100%);
+  line-height: 1.6em;
+  font-size: 0.7em;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header,
+section:not(.hero) {
+  scroll-snap-align: start;
+}
+
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.imagenCentral {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.hero {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+}
+.hero__container {
+  height: 200px;
+  width: 230px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  justify-self: end;
+  place-items: center;
+  row-gap: 10px;
+}
+.hero__container__title {
+  font-size: 2em;
+  padding: 1em 0;
+}
+.hero__container__button {
+  padding: 1em 3em;
+  border-radius: 15px;
+  background-color: black;
+}
+
+@media screen and (min-width: 800px) {
+  .hero__container {
+    line-height: 1.5em;
+    justify-self: center;
+    width: 330px;
+    font-size: 1.5em;
+  }
+}
+.productos {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  display: grid;
+  place-content: center;
+  grid-template-rows: 10vh repeat(4, 50vh) 40vh;
+  grid-template-columns: repeat(2, 50%);
+}
+.productos__title {
+  display: grid;
+  place-content: center;
+  grid-column: 1/-1;
+  background-color: gray;
+}
+.productos__image {
+  height: 100%;
+  width: 100%;
+}
+.productos__textContainer {
+  display: grid;
+  place-items: center;
+}
+.productos__textContainer__title {
+  color: burlywood;
+  font-size: 1.7em;
+  text-align: center;
+}
+.productos__textContainer__text {
+  margin: 0 5%;
+}
+.productos__textContainer__definition {
+  margin: 0 5%;
+  color: brown;
+  font-weight: bold;
+  display: grid;
+  justify-self: start;
+}
+.productos__textContainer button {
+  padding: 0.5em 1.5em;
+  border: 1px solid yellow;
+}
+.productos__textContainer:nth-of-type(4n) {
+  background-color: rgb(69, 59, 45);
+}
+.productos__imageContainer {
+  background-color: rgb(69, 59, 45);
+}
+.productos__imageContainer img {
+  height: 100%;
+  width: 100%;
+}
+.productos__propiedades {
+  background-color: rgb(50, 47, 47);
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: repeat(3, 1fr);
+}
+.productos__propiedades__title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 25px;
+  display: grid;
+  grid-column: 1/-1;
+  justify-content: center;
+}
+.productos__propiedades__imageContainer {
+  display: grid;
+  grid-column: 1/-1;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  place-self: center;
+  grid-row: 80% 20%;
+  grid-template-columns: repeat(3, 100px);
+}
+.productos__propiedades__imageContainer img {
+  height: 100px;
+  width: 100px;
+}
+.productos__propiedades__imageDescription {
+  place-self: center;
+  text-align: center;
+  margin-top: 20px;
+  color: burlywood;
+}
+
+.footer {
+  background-color: black;
+  display: grid;
+  place-content: center;
+  grid-template-rows: 50px repeat(5, 40px);
+  grid-template-columns: repeat(4, 150px);
+}
+.footer__title {
+  font-weight: bold;
+  font-size: 1.5em;
+  display: grid;
+  grid-column: 1/6;
+  place-content: center;
+}
+.footer__secondaryTitle {
+  color: burlywood;
+}
+.footer__icon {
+  display: grid;
+  grid-row: 2/-1;
+  place-self: center;
+}
+.footer__map {
+  grid-column: -1;
+  grid-row: 4/-1;
+  height: 100px;
+}
+
+.contacto {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 10vh 450px;
+  background-color: hsl(0deg, 0%, 100%);
+  color: burlywood;
+}
+.contacto__title {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  display: grid;
+  place-content: center;
+  background-color: black;
+}
+.contacto__container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.contacto__container img {
+  height: 100%;
+  width: 100%;
+}
+.contacto__container__formContainer {
+  margin-top: 2em;
+}
+.contacto__container__formContainer__form {
+  display: grid;
+  place-items: center start;
+  grid-template-rows: repeat(6, 13%) 35% 20%;
+  grid-template-columns: 100%;
+  margin: 0 5%;
+}
+.contacto__container__formContainer__form__title {
+  grid-row: 1;
+  margin: 30px 0;
+}
+.contacto__container__formContainer__form input,
+.contacto__container__formContainer__form textarea {
+  width: 100%;
+  background-color: burlywood;
+}
+.contacto__container__formContainer__form textarea {
+  height: 100px;
+}
+.contacto__container__formContainer__form input[type=submit] {
+  width: 50px;
+  display: grid;
+  place-self: center;
+  background-color: transparent;
+  border: 2px solid burlywood;
+}
+
+.recetas {
+  background-color: black;
+}
+.recetas__title {
+  display: grid;
+  font-weight: bold;
+  font-size: 2em;
+  place-content: center;
+  height: 50px;
+}
+.recetas__container__card {
+  display: grid;
+  margin: 0 5% 5% 5%;
+  place-content: center;
+  background-color: burlywood;
+  grid-template-rows: auto 50px auto 50px;
+}
+.recetas__container__card img {
+  width: 100%;
+}
+.recetas__container__card__title {
+  font-size: 2em;
+  display: grid;
+  place-content: center;
+  color: rgb(69, 59, 45);
+}
+.recetas__container__card__text {
+  margin: 0 25px;
+}
+.recetas__container__card button {
+  display: grid;
+  place-self: center;
+  color: rgb(69, 59, 45);
+  border: 1px solid rgb(69, 59, 45);
+  width: 90px;
+}
+.recetas__container__card:nth-of-type(3) {
+  margin: 0 5% 0 5%;
+}
+
+.header {
+  height: 30vh;
+  display: grid;
+  font-weight: bold;
+  grid-template-columns: auto auto auto auto auto;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  place-items: center;
+  place-content: center;
+  z-index: 1;
+}
+.header__humaya {
+  background-image: url(/images/Logo/LogoHumaya100x100.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+}/*# sourceMappingURL=main.css.map */

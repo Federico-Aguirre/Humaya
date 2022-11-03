@@ -1,0 +1,38 @@
+.hero {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+
+    &__container {
+        height: 200px;
+        width: 230px;
+        margin-top: 100px;
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        justify-self: end;
+        place-items: center;
+        row-gap: 10px;
+
+        &__title {
+            font-size: 2em;
+            padding: 1em 0;
+        }
+
+        &__button {
+            padding: 1em 3em;
+            border-radius: 15px;
+            background-color: black;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .hero__container {
+        line-height: 1.5em;
+        justify-self: center;
+        width: 330px;
+        font-size: 1.5em;
+    }
+}

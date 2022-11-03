@@ -1,0 +1,100 @@
+.productos {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    place-content: center;
+    grid-template-rows: 10vh repeat(4, 50vh) 40vh;
+    grid-template-columns: repeat(2, 50%);
+
+    &__title {
+        display: grid;
+        place-content: center;
+        grid-column: 1/-1;
+        background-color: gray;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__textContainer {
+        display: grid;
+        place-items: center;
+
+        &__title {
+            color: burlywood;
+            font-size: 1.7em;
+            text-align: center;
+        }
+
+        &__text {
+            margin: 0 5%;
+        }
+
+        &__definition {
+            margin: 0 5%;
+            color: brown;
+            font-weight: bold;
+            display: grid;
+            justify-self: start;
+        }
+
+        button {
+            padding: 0.5em 1.5em;
+            border: 1px solid yellow;
+        }
+    }
+
+    &__textContainer:nth-of-type(4n) {
+        background-color: rgb(69, 59, 45);
+    }
+
+    &__imageContainer {
+        background-color: rgb(69, 59, 45);
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__propiedades {
+        background-color: rgb(50, 47, 47);
+        display: grid;
+        grid-column: 1/-1;
+        grid-template-rows: 10% 90%;
+        grid-template-columns: repeat(3, 1fr);
+
+        &__title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 25px;
+            display: grid;
+            grid-column: 1/-1;
+            justify-content: center;
+        }
+
+        &__imageContainer {
+            display: grid;
+            grid-column: 1/-1;
+            column-gap: 25px;
+            place-self: center;
+            grid-row: 80% 20%;
+            grid-template-columns: repeat(3, 100px);
+
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        &__imageDescription {
+            place-self: center;
+            text-align: center;
+            margin-top: 20px;
+            color: burlywood;
+        }
+    }
+}

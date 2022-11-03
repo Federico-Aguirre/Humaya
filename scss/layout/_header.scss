@@ -1,0 +1,19 @@
+.header {
+    height: 30vh;
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 40px;
+    place-items: center;
+    place-content: center;
+    z-index: 1;
+
+    &__humaya {
+        background-image: url(/images/Logo/LogoHumaya100x100.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100px;
+        width: 100px;
+    }
+}

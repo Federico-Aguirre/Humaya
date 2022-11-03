@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  color: $white;
+  line-height: 1.6em;
+  font-size: 0.7em;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header,
+section:not(.hero) {
+  scroll-snap-align: start;
+}
+
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.imagenCentral {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
